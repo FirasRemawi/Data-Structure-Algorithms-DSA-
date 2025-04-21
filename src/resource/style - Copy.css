@@ -1,0 +1,340 @@
+/* Google-Inspired CSS */
+:root {
+    --primary-color: #4285f4;
+    --secondary-color: #34a853;
+    --text-color: #202124;
+    --background-color: #ffffff;
+    --border-color: #dadce0;
+    --hover-bg: #f1f3f4;
+    --font-family: 'Roboto', Arial, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+  }
+  
+  /* Global Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--background-color);
+  }
+  
+  header a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    margin: 0 10px;
+  }
+  
+  header a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Buttons */
+  button {
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #357ae8;
+  }
+  
+  button.secondary {
+    background-color: var(--secondary-color);
+  }
+  
+  button.secondary:hover {
+    background-color: #2c8533;
+  }
+  
+  /* Input Fields */
+  input[type="text"], input[type="email"], input[type="password"], textarea {
+    font-family: var(--font-family);
+    font-size: 14px;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 4px var(--primary-color);
+  }
+  
+  /* Cards */
+  .card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3);
+    padding: 20px;
+    background-color: var(--background-color);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(60, 64, 67, 0.4);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid var(--border-color);
+    font-size: 14px;
+    color: #5f6368;
+    background-color: var(--background-color);
+  }
+  
+  footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .container {
+      padding: 0 10px;
+    }
+  
+    button {
+      width: 100%;
+    }
+    /* Google-Inspired CSS with Menus */
+:root {
+  --primary-color: #4285f4;
+  --secondary-color: #34a853;
+  --text-color: #202124;
+  --background-color: #ffffff;
+  --border-color: #dadce0;
+  --hover-bg: #f1f3f4;
+  --font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+/* Global Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--background-color);
+}
+
+header a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* Menus */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: var(--background-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 10px 20px;
+  display: block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: var(--hover-bg);
+  color: var(--primary-color);
+}
+
+/* Dropdown Menus */
+.navbar li:hover > ul {
+  display: block;
+}
+
+.navbar ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.navbar ul ul li {
+  width: 200px;
+}
+
+.navbar ul ul a {
+  padding: 10px;
+}
+
+.navbar ul ul a:hover {
+  background-color: var(--hover-bg);
+  color: var(--primary-color);
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar a {
+    padding: 15px;
+  }
+
+  .navbar ul ul {
+    position: static;
+    box-shadow: none;
+  }
+}
+
+/* Buttons */
+button {
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--background-color);
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #357ae8;
+}
+
+button.secondary {
+  background-color: var(--secondary-color);
+}
+
+button.secondary:hover {
+  background-color: #2c8533;
+}
+
+/* Cards */
+.card {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3);
+  padding: 20px;
+  background-color: var(--background-color);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(60, 64, 67, 0.4);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid var(--border-color);
+  font-size: 14px;
+  color: #5f6368;
+  background-color: var(--background-color);
+}
+
+footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+  }
+  

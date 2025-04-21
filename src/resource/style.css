@@ -1,0 +1,122 @@
+/* General Styles */
+.root {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-background-color: #F4F7FA;
+}
+
+/* RadioButton Styles */
+.radio-button {
+    -fx-padding: 6.0px;
+}
+
+.radio-button .radio {
+    -fx-border-width: 2.0px;
+    -fx-border-color: #1E3A8A;
+    -fx-border-radius: 50.0%;
+    -fx-background-radius: 50.0%;
+    -fx-background-insets: 0.0px, 2.0px;
+    -fx-padding: 10.0px;
+}
+
+.radio-button:selected .radio {
+    -fx-background-color: #1E3A8A;
+}
+
+.radio-button:focused .radio {
+    -fx-border-color: derive(#1E3A8A, -20.0%);
+}
+
+.radio-button:hover .radio {
+    -fx-border-color: derive(#1E3A8A, 30.0%);
+}
+
+/* Label Styles */
+.label {
+    -fx-font-size: 16.0px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1E3A8A; /* Deep blue color */
+    -fx-padding: 8.0px; /* More padding for spacing */
+}
+
+/* TextField Styles */
+.text-field {
+    -fx-font-size: 16.0px;
+    -fx-border-color: #1E3A8A; /* Deep blue border color */
+    -fx-border-width: 2.0px; /* Border thickness */
+    -fx-border-radius: 8.0px; /* Rounded corners */
+    -fx-padding: 10.0px; /* Spacious padding inside the text field */
+    -fx-background-color: #FFFFFF; /* White background color */
+    -fx-background-radius: 8.0px; /* Rounded corners for the background */
+    -fx-prompt-text-fill: #9E9E9E; /* Gray color for prompt text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.1), 5.0px, 0.0, 0.0, 1.0px); /* Subtle shadow for depth */
+    -fx-transition: border-color 0.3s, background-color 0.3s; /* Smooth transitions */
+}
+
+.text-field:focused {
+    -fx-border-color: #1E3A8A; /* Deep blue border color when focused */
+    -fx-background-color: #E3F2FD; /* Lighter background color when focused */
+    -fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 6.0px, 0.0, 0.0, 2.0px); /* More prominent shadow when focused */
+}
+
+/* Button Styles */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #1E3A8A, #1B2C54); /* Gradient background */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-weight: bold; /* Make text bold */
+    -fx-border-radius: 8.0px; /* Rounded corners */
+    -fx-background-radius: 8.0px; /* Match the border radius for the background */
+    -fx-padding: 10.0px 20.0px; /* Top/bottom, right/left padding */
+    -fx-effect: dropshadow(gaussian, rgba(0.0, 0.0, 0.0, 0.3), 10.0px, 0.0, 0.0, 0.0); /* Subtle shadow for depth */
+    -fx-transition: background-color 0.3s, effect 0.3s; /* Smooth transitions */
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #3949AB, #1E3A8A); /* Lighter gradient on hover */
+    -fx-cursor: hand; /* Change cursor to hand symbol */
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #1E3A8A, #16274B); /* Even lighter gradient when pressed */
+    -fx-effect: dropshadow(gaussian, rgba(0.0, 0.0, 0.0, 0.3), 5.0px, 0.0, 0.0, 0.0); /* Smaller shadow when pressed */
+}
+
+/* ComboBox Styles */
+.combo-box {
+    -fx-font-size: 14.0px;
+    -fx-border-color: #1E3A8A; /* Deep blue border color */
+    -fx-border-width: 2.0px; /* Border thickness */
+    -fx-border-radius: 8.0px; /* Rounded corners */
+    -fx-background-color: #FFFFFF; /* White background */
+    -fx-padding: 10.0px; /* Spacious padding inside */
+}
+
+.combo-box-base {
+    -fx-background-color: #FFFFFF; /* White background */
+    -fx-border-radius: 8.0px;
+}
+
+.combo-box .list-cell {
+    -fx-font-size: 14.0px;
+    -fx-padding: 8.0px; /* Padding for list cells */
+    -fx-background-color: #FFFFFF; /* White background for list cells */
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: #E3F2FD; /* Lighter background color when hovered */
+}
+
+.combo-box .list-cell:filled:selected {
+     -fx-text-fill: #1E3A8A; /* White text for selected cells */
+}
+
+/* ListView Styles */
+.list-view {
+    -fx-background-color: #FFFFFF; /* White background */
+}
+
+/* ImageView Styles */
+.your-image-view-style-class {
+    -fx-max-width: 200.0px;
+    -fx-max-height: 100.0px;
+    -fx-preserve-ratio: true;
+}
